@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  background-color: #f5f8fa;
+}
+.navbar{
+    background-color: #cd1818 !important;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url(/images/36-365828_navbar-toggle-icon-menu-hamburger-png-white-removebg-preview.png) !important;   
+}
+.box-form{
+   
+   padding:50px 0px;
+    margin-top: 20px !important;
+    background-color: #fff;
+    max-width: max-content;
+    max-height: max-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 0.2px 0.2   px #636b6f;
+}
+.item{
+  display: flex;
+  justify-content: center;
+}
+.item h1{
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color:#636b6f;
+    
+}
+.box-title{
+  padding: 10px 50px 10px 50px;
+  background-color: #cd1818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.form-chonthe{
+ margin: 0 auto;
+ padding-top: 10px;
+ font-size: 16px;
+ font-weight: 600;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.item-form{
+  display: flex;
+  justify-content:space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.item-form select {
+  width:50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400 !important;
+  padding-left: 10px;
+}
+.item-form input{
+  width: 50%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  padding-left: 10px;
+  box-shadow: #636b6f 0px 0px 0.2px 0.2px;
+}
+.btn-kiemtra{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.btn-kiemtra button{
+  padding:5px 20px 5px 20px;
+  border: none;
+  background-color: rgb(121, 121, 241);
+  color: #fff;
+}
+.btn-kiemtra button:hover{
+  background-color: #cd1818;
+}
+.footer{
+  background-color: #cd1818;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: 100px;
+}

